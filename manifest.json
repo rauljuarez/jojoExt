@@ -3,7 +3,7 @@
   "name": "JOJOLEJO v 0.0.1",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Get pages source from a popup",
+  "description": "This Extension gets info about the travel sites, for user profiling.",
   "browser_action": {
     "default_icon": "icon.png"
   },

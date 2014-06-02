@@ -2,7 +2,7 @@
 //Getting the Info for the seaches on the 
 $(document).ready(function() {
 
-	var serviceUrl = 'http://localhost:8080/'
+	var serviceUrl = 'http://localhost:8080/api/searchs'
 
 	var SearchFor = $('#HEADING').text();
 	var site = document.domain;
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	//We build an object to send to the service. 
 	ObjSend = {
-		"user" : user,
+		"user" : "rauljuarez@gmail.com",
 		"dateCreated" : date,
 		"site" : site,
 		"searchTerm" : SearchFor 
@@ -33,7 +33,7 @@ $(document).ready(function() {
             async:false,
             success: function(msg){
                 //do some thing
-                alert("we can Post to the service");
+                console.log("Service Status: "+msg);
            },
            error: function(jxhr){
                alert(jxhr.responseText);
